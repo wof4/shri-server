@@ -1,0 +1,43 @@
+.button {
+    line-height: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #e6e6e6;
+    border-radius: 4px;
+    width: max-content;
+    height: max-content;
+    padding: 0 2px 0 12px;
+}
+
+.button__text  {
+    padding-right: 14px;
+}
+
+.button__header_text{
+    padding-right: 14px;
+}
+
+.button__icon {
+    margin-left: -3px;
+    margin-right: 6px;
+    margin-top: 2px;
+}
+
+@media screen and (max-width: 668px) {
+    .button{
+        padding: 0 2px 0 15px;
+    }
+    .button__icon{
+        margin-right: 7px;
+    }
+
+    .button__header_text{
+    display: none;
+    }
+
+    .button__text{
+        text-align: center;
+        width: 100%;
+    }
+    }

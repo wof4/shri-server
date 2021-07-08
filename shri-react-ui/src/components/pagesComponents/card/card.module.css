@@ -1,0 +1,222 @@
+.card__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 16px;
+    background: #ffffff;
+    box-shadow: 0px 0px 1px rgba(67, 68, 69, 0.3), 0px 1px 1px rgba(67, 68, 69, 0.3);
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+.card__container:hover {
+    box-shadow: 0px 0px 2px rgb(67 68 69 / 30%), 4px 4px 4px rgb(67 68 69 / 30%);
+}
+
+.card__container_direction_column {
+    flex-direction: column;
+}
+
+.card__container_direction_column .card__date {
+    display: flex;
+    padding: 0px 72px 6px;
+}
+
+.card__container_direction_column .card__date .card__day {
+    padding-right: 26px;
+}
+
+.card__commit {
+    display: flex;
+    padding: 4px;
+}
+
+.card__commitHash {
+    margin-right: 26px;
+}
+
+.card__branch {
+    display: flex;
+    padding: 4px;
+}
+
+.card__branch_commit {
+    display: flex;
+}
+
+.card__left {
+    padding: 8px 52px;
+}
+
+.card__commitMessage {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.card__branchName {
+    position: relative;
+    line-height: 16px;
+    margin-left: 20px;
+    margin-right: 4px;
+}
+
+.card__branchName:before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 8px;
+    background-image: url("../../../icons/code-commit.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    top: 4px;
+    left: -20px;
+    right: 0px;
+    bottom: 0;
+}
+
+.card_authorName {
+    position: relative;
+}
+.card_authorName:before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 14px;
+    background-image: url("../../../icons/user.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: -16px;
+    right: 0px;
+    bottom: 0;
+}
+
+.card__date {
+    padding: 6px 16px;
+}
+
+.card__day {
+    position: relative;
+    padding: 6px 10px 6px 4px;
+}
+
+.card__day:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 16px;
+    background-image: url("../../../icons/calendar.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 6px;
+    left: -16px;
+    right: 0px;
+    bottom: 0;
+}
+
+.card__duration {
+    position: relative;
+    padding: 6px;
+}
+.card__duration:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 16px;
+    background-image: url("../../../icons/vector.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 6px;
+    left: -16px;
+    right: 0px;
+    bottom: 0;
+}
+
+.waiting {
+    color: rgba(255, 154, 0, 1);
+    position: relative;
+    font-size: 18px;
+    line-height: 20px;
+    margin-right: 4px;
+}
+.waiting:before {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url("../../../icons/waiting.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: -32px;
+    right: 0px;
+    bottom: 0;
+}
+
+@media screen and (max-width: 736px) {
+    .card__left {
+        padding: 8px 40px;
+    }
+    .card__date {
+        padding: 6px 4px;
+    }
+}
+@media screen and (max-width: 668px) {
+    .card__container {
+        flex-direction: column;
+    }
+
+    .card__commit {
+        flex-direction: column;
+        padding: 8px 5px 0;
+    }
+
+    .card__branch {
+        flex-direction: column;
+        padding: 0px 5px;
+    }
+
+    .card_authorName {
+        padding-left: 15px;
+    }
+    .card_authorName:before {
+        left: 0px;
+    }
+
+    .card__branch_commit {
+        padding: 8px 0px;
+    }
+
+    .card__duration {
+        padding: 6px 20px;
+    }
+
+    .card__duration:before {
+        left: 0px;
+    }
+
+    .waiting {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .waiting:before {
+        width: 16px;
+        height: 16px;
+        left: -24px;
+        background-size: cover;
+    }
+
+    .card__left {
+        padding: 8px 32px 6px;
+    }
+    .card__date {
+        padding: 6px 0px 6px 56px;
+        display: flex;
+    }
+    .card__container_direction_column .card__date {
+        display: flex;
+        padding: 6px 0px 6px 52px;
+    }
+}

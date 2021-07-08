@@ -1,0 +1,185 @@
+.form_input {
+    color: #000000;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 13px;
+    line-height: 15px;
+    letter-spacing: 0.06px;
+    opacity: 0.2;
+}
+.form__inputs {
+    width: 54%;
+    margin-bottom: 20px;
+}
+
+.form_input:focus {
+    opacity: 1;
+}
+
+.form__icon {
+    position: absolute;
+    right: -18px;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.input_container {
+    padding: 15px 0 0px 0px;
+    position: relative;
+}
+
+.error {
+    position: absolute;
+    bottom: -15px;
+    color: red;
+    border-color: red;
+}
+
+.form_input_error {
+    border: 2px solid red;
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    padding: 10px 13px;
+    line-height: 15px;
+    letter-spacing: 0.06px;
+}
+
+.form__input_title {
+    line-height: 18px;
+    letter-spacing: 0.06px;
+    width: max-content;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.form__desc {
+    line-height: 18px;
+    letter-spacing: 0.06px;
+    color: #7f8285;
+    margin-bottom: 10px;
+}
+
+.form__star_icon {
+    position: absolute;
+    top: -2px;
+    right: -8px;
+}
+
+.form__title {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    letter-spacing: 0.25px;
+    font-weight: bold;
+}
+
+.form__buttons {
+    display: flex;
+}
+
+.form__button {
+    padding: 10px 20px;
+    background: #f2f2f2;
+    color: #7f7f7f;
+    opacity: 0.5;
+    border-radius: 4px;
+    width: max-content;
+    cursor: pointer;
+    margin-right: 8px;
+    border: 2px solid #f2f2f2;
+}
+
+.form__button_save {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: max-content;
+    cursor: pointer;
+    border: 2px solid #ffcc00;
+    margin-right: 8px;
+}
+
+.form__button_save:hover {
+    background: #f2c200;
+    border: 2px solid #f2c200;
+    margin-right: 8px;
+}
+
+.form__button_save:active {
+    background: #ffcc00;
+    border: 2px solid #b38f00;
+    margin-right: 8px;
+}
+
+.form__button_cansel {
+    background: #e6e6e6;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: max-content;
+    cursor: pointer;
+    border: 2px solid #e6e6e6;
+}
+
+.form__button_cansel:hover {
+    background: #dbdbdb;
+    border: 2px solid #e6e6e6;
+}
+.form__button_cansel:active {
+    border: 2px solid #b3b3b3;
+}
+
+.input_container_time {
+    display: flex;
+    align-items: baseline;
+}
+
+.input_container_time .form_input {
+    width: 29px;
+    padding: 10px 0px 10px 20px;
+    margin: 18px 8px 0px 8px;
+}
+
+@media screen and (max-width: 668px) {
+    .form__inputs {
+        width: 91%;
+        margin-bottom: 12px;
+    }
+    .form__title {
+        margin-bottom: 10px;
+    }
+
+    .form__input_title {
+        margin-bottom: 4px;
+    }
+
+    .input_container {
+        padding: 16px 0 0px 0px;
+    }
+
+    .form__desc {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .form__buttons {
+        display: block;
+        text-align: center;
+    }
+
+    .form__button {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+    .form__button_save {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+
+    .form__button_cansel {
+        width: 85%;
+    }
+}

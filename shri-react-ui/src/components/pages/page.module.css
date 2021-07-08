@@ -1,0 +1,34 @@
+.build__history_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page_wrapper {
+    max-width: 824px;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.page_wrapper_disabled {
+    max-width: 824px;
+    height: 100%;
+    width: 80%;
+    position: relative;
+}
+
+.page__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 668px) {
+    .page_wrapper {
+        width: 90%;
+    }
+}

@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 18px 0;
+}
+
+.header__description {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+}
+
+.heaedr__buttons {
+    display: flex;
+}
+
+.header__setting_item{
+    margin-left: 8px;
+}
+
+
+
+@media screen and (max-width: 668px) {
+
+    .header__description{
+        font-size: 18px;
+    }
+    }
+

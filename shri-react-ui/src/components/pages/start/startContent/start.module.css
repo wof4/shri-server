@@ -1,0 +1,52 @@
+.start__container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__content {
+    width: 264px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.start__desc{
+    padding: 32px 0 24px 0;
+    line-height: 1.25;
+}
+
+.start__setting_button {
+    background: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: max-content;
+    cursor: pointer;
+    border: 2px solid #ffcc00;
+    
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.start__setting_button:hover {
+    background: #f2c200;
+    border: 2px solid #f2c200;
+}
+
+.start__setting_button:active {
+    background: #ffcc00;
+    border: 2px solid #b38f00;
+}
+
+

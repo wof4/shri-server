@@ -1,0 +1,18 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  min-height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 13px;
+  letter-spacing: 0.06px;
+}
