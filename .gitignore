@@ -118,7 +118,7 @@ dist
 .pnp.*
 
 
-server/repo
+shri-server/repo
 shri-react-ui/build
-server/node_modules
+shri-server/node_modules
 shri-react-ui/node_modules

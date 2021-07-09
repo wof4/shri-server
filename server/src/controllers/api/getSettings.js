@@ -16,7 +16,8 @@ data:{
 }
 module.exports = async (req, res) => {
 
-  if(!req.query.params){
+console.log(req.query.params)
+  if(req.query.params){
     res.json(data);
   }else{
     try {
