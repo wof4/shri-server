@@ -118,7 +118,12 @@ dist
 .pnp.*
 
 
-shri-server/repo
-shri-react-ui/build
-shri-server/node_modules
-shri-react-ui/node_modules
+
+react-ui/build
+react-ui/node_modules
+server-ui/node_modules
+server-ui/.env
+server-ui/repo
+build-server-agent/build-agent/node_modules
+build-server-agent/build-server/node_modules
+build-server-agent/build-server/.env
