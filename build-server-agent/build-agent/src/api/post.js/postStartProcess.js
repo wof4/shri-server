@@ -10,7 +10,6 @@ const postStartProcess = async (port) => {
         if (response.data.statusCode === 200) {
             console.log('AGENT --- зарегистрировался успешно')
         } else {
-            // console.log('response', response.data.text)
         }
     } catch (error) {
         console.log('AGENT --- ошибка регистрации у билд сервера')
